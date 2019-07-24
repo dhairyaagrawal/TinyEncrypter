@@ -8,14 +8,14 @@ void decrypt(char* ciphertext, char* cipher);
 void shuffle(unsigned char* array, int size);
 
 void shuffle(unsigned char* array, int size) {
-	if(size > 1) {
-		for(int i = 0; i < size; ++i) {
-			int j = rand() % size;
-			unsigned char temp = array[j];
-			array[j] = array[i];
-			array[i] = temp;
-		}
-	}
+    if(size > 1) {
+        for(int i = 0; i < size; ++i) {
+            int j = rand() % size;
+            unsigned char temp = array[j];
+            array[j] = array[i];
+            array[i] = temp;
+        }
+    }
 }
 
 void encrypt(char* inputFile) {
